@@ -914,57 +914,140 @@ console.log(builder.getValue()); // '=^.^='
 // console.log(mango.accessLevel); // superuser
 
 // 19
-class User {
-  email;
+// class User {
+//   email;
 
-  constructor(email) {
-    this.email = email;
-  }
+//   constructor(email) {
+//     this.email = email;
+//   }
 
-  get email() {
-    return this.email;
-  }
+//   get email() {
+//     return this.email;
+//   }
 
-  set email(newEmail) {
-    this.email = newEmail;
-  }
-}
-class Admin extends User {
-  // Пиши код ниже этой строки
+//   set email(newEmail) {
+//     this.email = newEmail;
+//   }
+// }
+// class Admin extends User {
+//   // Пиши код ниже этой строки
 
-  static AccessLevel = {
-    BASIC: "basic",
-    SUPERUSER: "superuser",
-  };
+//   static AccessLevel = {
+//     BASIC: "basic",
+//     SUPERUSER: "superuser",
+//   };
 
-  accessLevel;
+//   accessLevel;
 
-  static blacklistedEmails = [];
+//   static blacklistedEmails = [];
 
-  constructor({ email, accessLevel }) {
-    super(email);
-    this.accessLevel = accessLevel;
-  }
+//   constructor({ email, accessLevel }) {
+//     super(email);
+//     this.accessLevel = accessLevel;
+//   }
 
-  blacklist(email) {
-    this.blacklistedEmails.push(email);
-  }
+//   blacklist(email) {
+//     this.blacklistedEmails.push(email);
+//   }
 
-  isBlacklisted(email) {
-    return this.blacklistedEmails.includes(email);
-  }
+//   isBlacklisted(email) {
+//     return this.blacklistedEmails.includes(email);
+//   }
 
-  // Пиши код выше этой строки
-}
+//   // Пиши код выше этой строки
+// }
 
-const mango = new Admin({
-  email: "mango@mail.com",
-  accessLevel: Admin.AccessLevel.SUPERUSER,
-});
+// const mango = new Admin({
+//   email: "mango@mail.com",
+//   accessLevel: Admin.AccessLevel.SUPERUSER,
+// });
 
-console.log(mango.email); // mango@mail.com
-console.log(mango.accessLevel); // superuser
-mango.blacklist("poly@mail.com");
-console.log(mango.blacklistedEmails); // 'poly@mail.com'
-console.log(mango.isBlacklisted("mango@mail.com")); //  false
-console.log(mango.isBlacklisted("poly@mail.com")); // true
+// console.log(mango.email); // mango@mail.com
+// console.log(mango.accessLevel); // superuser
+// mango.blacklist("poly@mail.com");
+// console.log(mango.blacklistedEmails); // 'poly@mail.com'
+// console.log(mango.isBlacklisted("mango@mail.com")); //  false
+// console.log(mango.isBlacklisted("poly@mail.com")); // true
+
+// -----------------------------------------------------
+
+// dz6
+
+// 1
+// function calculateTotalPrice(orderedItems) {
+//   let totalPrice = 0;
+//   // Пиши код ниже этой строки
+
+//    orderedItems.forEach(item => {
+//      totalPrice += item
+//    }
+//                        );
+
+//   // Пиши код выше этой строки
+//   return totalPrice;
+// }
+
+// 2
+// function filterArray(numbers, value) {
+//   const filteredNumbers = [];
+//   // Пиши код ниже этой строки
+
+//   numbers.forEach((number) => {
+//     if (number > value) {
+//       filteredNumbers.push(number);
+//     }
+//   });
+
+//   // Пиши код выше этой строки
+//   return filteredNumbers;
+// }
+
+// 3
+// function getCommonElements(firstArray, secondArray) {
+//   const commonElements = [];
+//   // Пиши код ниже этой строки
+
+//   firstArray.forEach((array) => {
+//     if (secondArray.includes(array)) {
+//       commonElements.push(array);
+//     }
+//   });
+
+//   return commonElements;
+//   // Пиши код выше этой строки
+// }
+
+// 4
+// const calculateTotalPrice = (quantity, pricePerItem) => {
+// return quantity * pricePerItem;
+// }
+
+// 5
+// const calculateTotalPrice = (quantity, pricePerItem) => quantity * pricePerItem;
+
+// 6
+// const calculateTotalPrice = (orderedItems) => {
+//   let totalPrice = 0;
+
+//   orderedItems.forEach((item) => {
+//     totalPrice += item;
+//   });
+
+//   return totalPrice;
+// };
+
+// 7
+// const filterArray = (numbers, value) => {
+//   const filteredNumbers = [];
+
+//   numbers.forEach((number) => {
+//     if (number > value) {
+//       filteredNumbers.push(number);
+//     }
+//   });
+
+//   // Пиши код выше этой строки
+//   return filteredNumbers;
+// };
+
+// 8
