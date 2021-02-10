@@ -1051,3 +1051,40 @@ console.log(builder.getValue()); // '=^.^='
 // };
 
 // 8
+// const getCommonElements = (firstArray, secondArray) => {
+//   const commonElements = [];
+
+//   firstArray.forEach((element) => {
+//     if (secondArray.includes(element)) {
+//       commonElements.push(element);
+//     }
+//   });
+
+//   // Пиши код выше этой строки
+//   return commonElements;
+// };
+
+// 9 (1)
+// function changeEven(numbers, value) {
+//     const newEven = [];
+//   numbers.forEach((number) => {
+//     if (number % 2 === 0) {
+//       newEven.push(number + value);
+//     } else {
+//       newEven.push(number);
+//     }
+//   });
+//   return newEven;
+
+// }
+
+// 9(2);
+// function changeEven(numbers, value) {
+//   const newEven = [];
+//   numbers.forEach((number) => {
+//     number % 2 === 0 ? newEven.push(number + value) : newEven.push(number);
+//   });
+//   return newEven;
+// }
+
+// 10
