@@ -1088,3 +1088,48 @@ console.log(builder.getValue()); // '=^.^='
 // }
 
 // 10
+// const planets = ["Земля", "Марс", "Венера", "Юпитер"];
+// // Пиши код ниже этой строки
+// const planetsLengths = planets.map((planet) => planet.length);
+
+// 11
+// const books = [
+//   { title: "Последнее королевство", author: "Бернард Корнуэлл", rating: 8.38 },
+//   { title: "На берегу спокойных вод", author: "Роберт Шекли", rating: 8.51 },
+//   { title: "Сон смешного человека", author: "Федор Достоевский", rating: 7.75 },
+//   { title: "Красна как кровь", author: "Ли Танит", rating: 7.94 },
+//   { title: "Враг Божий", author: "Бернард Корнуэлл", rating: 8.67 },
+// ];
+// // Пиши код ниже этой строки
+
+// const titles = books.map((book) => book.title);
+
+// 12
+// const books = [
+//   {
+//     title: "Последнее королевство",
+//     author: "Бернард Корнуэлл",
+//     genres: ["приключения", "историческое"],
+//   },
+//   {
+//     title: "На берегу спокойных вод",
+//     author: "Роберт Шекли",
+//     genres: ["фантастика"],
+//   },
+//   {
+//     title: "Красна как кровь",
+//     author: "Ли Танит",
+//     genres: ["ужасы", "мистика"],
+//   },
+// ];
+// // Пиши код ниже этой строки
+
+// const genres = books.flatMap((book) => book.genres);
+
+// 13
+// const getUserNames = (users) => users.map((user) => user.name);
+
+14;
+const getUserEmails = (users) => users.map((user) => user.email);
+
+// 15
