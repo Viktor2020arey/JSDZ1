@@ -1188,3 +1188,5 @@ console.log(builder.getValue()); // '=^.^='
 //   users.filter((user) => user.age >= minAge && user.age < maxAge);
 
 // 20
+// const getUsersWithFriend = (users, friendName) =>
+//   users.filter((user) => user.friends.includes(friendName));
