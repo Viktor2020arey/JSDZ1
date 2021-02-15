@@ -612,35 +612,35 @@
 // console.log(storage.getItems()); // ["Нанитоиды", "Антигравитатор", "Дроид"]
 
 // 7
-function StringBuilder(baseValue) {
-  this.value = baseValue;
-}
+// function StringBuilder(baseValue) {
+//   this.value = baseValue;
+// }
 
-StringBuilder.prototype.getValue = function () {
-  return this.value;
-};
+// StringBuilder.prototype.getValue = function () {
+//   return this.value;
+// };
 
-StringBuilder.prototype.padStart = function (str) {
-  this.value = str + ".";
-};
+// StringBuilder.prototype.padStart = function (str) {
+//   this.value = str + ".";
+// };
 
-StringBuilder.prototype.padEnd = function (str) {
-  this.value = str + "." + str;
-};
+// StringBuilder.prototype.padEnd = function (str) {
+//   this.value = str + "." + str;
+// };
 
-StringBuilder.prototype.padBoth = function (str) {
-  this.value = str + "^" + "." + "^" + str;
-};
+// StringBuilder.prototype.padBoth = function (str) {
+//   this.value = str + "^" + "." + "^" + str;
+// };
 
-// Пиши код выше этой строки
-const builder = new StringBuilder(".");
-console.log(builder.getValue()); // '.'
-builder.padStart("^");
-console.log(builder.getValue()); // '^.'
-builder.padEnd("^");
-console.log(builder.getValue()); // '^.^'
-builder.padBoth("=");
-console.log(builder.getValue()); // '=^.^='
+// // Пиши код выше этой строки
+// const builder = new StringBuilder(".");
+// console.log(builder.getValue()); // '.'
+// builder.padStart("^");
+// console.log(builder.getValue()); // '^.'
+// builder.padEnd("^");
+// console.log(builder.getValue()); // '^.^'
+// builder.padBoth("=");
+// console.log(builder.getValue()); // '=^.^='
 
 // 7/2
 
@@ -1181,12 +1181,10 @@ console.log(builder.getValue()); // '=^.^='
 
 // 18
 // const getUsersWithEyeColor = (users, color) =>
-//   users.filter((user) => user.eyeColor === color);
+// users.filter((user) => user.eyeColor === color);
 
 // 19
-// const getUsersWithAge = (users, minAge, maxAge) =>
-//   users.filter((user) => user.age >= minAge && user.age < maxAge);
+// const getUsersWithAge = (users, minAge, maxAge) => users.filter(user => user.age >= minAge && user.age < maxAge)
 
 // 20
-// const getUsersWithFriend = (users, friendName) =>
-//   users.filter((user) => user.friends.includes(friendName));
+// const getUsersWithFriend = (users, friendName) => users.filter(user => user.friends.includes(friendName))
