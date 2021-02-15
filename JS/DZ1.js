@@ -1256,3 +1256,168 @@
 
 // 29
 // const isAnyUserActive = users => users.some(user => user.isActive === true);
+
+// 30
+// const totalPlayTime = playtimes.reduce((acc, time) => acc + time, 0);
+
+// 31
+// const players = [
+//   { name: 'Манго', playtime: 1270, gamesPlayed: 4 },
+//   { name: 'Поли', playtime: 469, gamesPlayed: 2 },
+//   { name: 'Аякс', playtime: 690, gamesPlayed: 3 },
+//   { name: 'Киви', playtime: 241, gamesPlayed: 1 },
+// ];
+// // Пиши код ниже этой строки
+
+// const totalAveragePlaytimePerGame = players.reduce(
+//   (total, player) => total + player.playtime / player.gamesPlayed,
+//   0,
+// );
+
+// 32
+// const calculateTotalBalance = users =>
+//   users.reduce((total, user) => total + user.balance, 0);
+
+// 33
+// const getTotalFriendCount = users =>
+//   users.reduce((total, user) => total + user.friends.length, 0);
+
+// 34
+// const releaseDates = [2016, 1967, 2008, 1984, 1973, 2012, 1997];
+// const authors = [
+//   'Ли Танит',
+//   'Бернард Корнуэлл',
+//   'Роберт Шекли',
+//   'Федор Достоевский',
+// ];
+// // Пиши код ниже этой строки
+
+// const ascendingReleaseDates = [...releaseDates].sort();
+
+// const alphabeticalAuthors = [...authors].sort();
+
+// 35
+// const releaseDates = [2016, 1967, 2008, 1984, 1973, 2012, 1997];
+// // Пиши код ниже этой строки
+
+// const ascendingReleaseDates = [...releaseDates].sort((a, b) => a - b);
+
+// const descendingReleaseDates = [...releaseDates].sort((a, b) => b - a);
+
+// 36
+// const authors = [
+//   'Ли Танит',
+//   'Бернард Корнуэлл',
+//   'Роберт Шекли',
+//   'Федор Достоевский',
+//   'Говард Лавкрафт',
+// ];
+// // Пиши код ниже этой строки
+
+// const authorsInAlphabetOrder = [...authors].sort((a, b) => a.localeCompare(b));
+
+// const authorsInReversedOrder = [...authors].sort((a, b) => b.localeCompare(a));
+
+// 37
+// const books = [
+//   { title: 'Последнее королевство', author: 'Бернард Корнуэлл', rating: 8.38 },
+//   { title: 'На берегу спокойных вод', author: 'Роберт Шекли', rating: 8.51 },
+//   { title: 'Сон смешного человека', author: 'Федор Достоевский', rating: 7.75 },
+//   { title: 'Красна как кровь', author: 'Ли Танит', rating: 7.94 },
+//   { title: 'Враг Божий', author: 'Бернард Корнуэлл', rating: 8.67 },
+// ];
+// // Пиши код ниже этой строки
+
+// const sortedByAuthorName = [...books].sort((firstBook, secondBook) =>
+//   firstBook.author.localeCompare(secondBook.author),
+// );
+
+// const sortedByReversedAuthorName = [...books].sort((firstBook, secondBook) =>
+//   secondBook.author.localeCompare(firstBook.author),
+// );
+
+// const sortedByAscendingRating = [...books].sort(
+//   (firstBook, secondBook) => firstBook.rating - secondBook.rating,
+// );
+
+// const sortedByDescentingRating = [...books].sort(
+//   (firstBook, secondBook) => secondBook.rating - firstBook.rating,
+// );
+
+// 38
+// const sortByAscendingBalance = users =>
+//   [...users].sort(
+//     (firstUser, secondUser) => firstUser.balance - secondUser.balance,
+//   );
+
+// 39
+// const sortByDescendingFriendCount = users =>
+//   [...users].sort(
+//     (firstUser, secondUser) =>
+//       secondUser.friends.length - firstUser.friends.length,
+//   );
+
+// 40
+// const sortByName = users =>
+//   [...users].sort((firstUser, secondUser) =>
+//     firstUser.name.localeCompare(secondUser.name),
+//   );
+
+// 41
+// const books = [
+//   { title: 'Последнее королевство', author: 'Бернард Корнуэлл', rating: 8.38 },
+//   { title: 'На берегу спокойных вод', author: 'Роберт Шекли', rating: 8.51 },
+//   { title: 'Сон смешного человека', author: 'Федор Достоевский', rating: 7.75 },
+//   { title: 'Красна как кровь', author: 'Ли Танит', rating: 8.14 },
+//   { title: 'Сны В Ведьмином Доме', author: 'Говард Лавкрафт', rating: 8.67 },
+// ];
+// const MIN_BOOK_RATING = 8;
+// // Пиши код ниже этой строки
+
+// const names = books
+//   .filter(book => book.rating >= MIN_BOOK_RATING)
+//   .map(book => book.author)
+//   .sort((a, b) => a.localeCompare(b));
+
+// 41(2)
+// const books = [
+//   { title: 'Последнее королевство', author: 'Бернард Корнуэлл', rating: 8.38 },
+//   { title: 'На берегу спокойных вод', author: 'Роберт Шекли', rating: 8.51 },
+//   { title: 'Сон смешного человека', author: 'Федор Достоевский', rating: 7.75 },
+//   { title: 'Красна как кровь', author: 'Ли Танит', rating: 8.14 },
+//   { title: 'Сны В Ведьмином Доме', author: 'Говард Лавкрафт', rating: 8.67 },
+// ];
+// const MIN_BOOK_RATING = 8;
+// // Пиши код ниже этой строки
+
+// const names = [...books]
+
+//   .sort((firstBook, secondBook) =>
+//     firstBook.author.localeCompare(secondBook.author),
+//   )
+
+//   .filter(book => book.rating >= MIN_BOOK_RATING)
+
+//   .map(book => book.author);
+
+// 42
+// const getNamesSortedByFriendCount = users =>
+//   [...users]
+//     .sort(
+//       (firstUser, secondUser) =>
+//         firstUser.friends.length - secondUser.friends.length,
+//     )
+//     .map(user => user.name);
+
+// 43
+// const getSortedFriends = users =>
+//   [...users]
+//     .flatMap(user => user.friends)
+//     .filter((friends, index, array) => array.indexOf(friends) === index)
+//     .sort((a, b) => a.localeCompare(b));
+
+// 44
+// const getTotalBalanceByGender = (users, gender) =>
+//   [...users]
+//     .filter(user => user.gender === gender)
+//     .reduce((total, user) => total + user.balance, 0);
