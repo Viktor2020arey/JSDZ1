@@ -1183,8 +1183,10 @@
 // const getUsersWithEyeColor = (users, color) =>
 // users.filter((user) => user.eyeColor === color);
 
-// 19
-// const getUsersWithAge = (users, minAge, maxAge) => users.filter(user => user.age >= minAge && user.age < maxAge)
+// 19;
+// const getUsersWithAge = (users, minAge, maxAge) =>
+//   users.filter(user => user.age >= minAge && user.age < maxAge);
 
-// 20
-// const getUsersWithFriend = (users, friendName) => users.filter(user => user.friends.includes(friendName))
+// 20;
+// const getUsersWithFriend = (users, friendName) =>
+//   users.filter(user => user.friends.includes(friendName));
