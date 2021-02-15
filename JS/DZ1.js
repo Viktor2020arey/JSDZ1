@@ -1190,3 +1190,69 @@
 // 20;
 // const getUsersWithFriend = (users, friendName) =>
 //   users.filter(user => user.friends.includes(friendName));
+
+// 21
+// const getFriends = users =>
+//   users
+//     .flatMap(user => user.friends)
+//     .filter((friend, index, array) => array.indexOf(friend) === index);
+
+// 22
+// const getActiveUsers = users => users.filter(user => user.isActive === true);
+
+// 23
+// const getInactiveUsers = users => users.filter(user => user.isActive === false);
+
+// 24
+// const books = [
+//   { title: 'Последнее королевство', author: 'Бернард Корнуэлл', rating: 8.38 },
+//   { title: 'На берегу спокойных вод', author: 'Роберт Шекли', rating: 8.51 },
+//   { title: 'Сон смешного человека', author: 'Федор Достоевский', rating: 7.75 },
+//   { title: 'Красна как кровь', author: 'Ли Танит', rating: 7.94 },
+// ];
+// const BOOK_TITLE = 'Сон смешного человека';
+// const AUTHOR = 'Роберт Шекли';
+// // Пиши код ниже этой строки
+
+// const bookWithTitle = books.find(book => book.title === BOOK_TITLE);
+// const bookByAuthor = books.find(book => book.author === AUTHOR);
+
+// 25
+// const getUserWithEmail = (users, email) =>
+//   users.find(user => user.email === email);
+
+// 26
+// const firstArray = [26, 94, 36, 18];
+// const secondArray = [17, 61, 23];
+// const thirdArray = [17, 26, 94, 61, 36, 23, 18];
+// // Пиши код ниже этой строки
+
+// const eachElementInFirstIsEven = firstArray.every(value => value % 2 === 0);
+// const eachElementInFirstIsOdd = firstArray.every(number => number % 2 !== 0);
+
+// const eachElementInSecondIsEven = secondArray.every(number => number % 2 === 0);
+// const eachElementInSecondIsOdd = secondArray.every(number => number % 2 !== 0);
+
+// const eachElementInThirdIsEven = thirdArray.every(number => number % 2 === 0);
+// const eachElementInThirdIsOdd = thirdArray.every(number => number % 2 !== 0);
+
+// 27
+// const isEveryUserActive = users => users.every(user => user.isActive === true);
+
+// 28
+// const firstArray = [26, 94, 36, 18];
+// const secondArray = [17, 61, 23];
+// const thirdArray = [17, 26, 94, 61, 36, 23, 18];
+// // Пиши код ниже этой строки
+
+// const anyElementInFirstIsEven = firstArray.some(number => number % 2 === 0);
+// const anyElementInFirstIsOdd = firstArray.some(number => number % 2 !== 0);
+
+// const anyElementInSecondIsEven = secondArray.some(number => number % 2 === 0);
+// const anyElementInSecondIsOdd = secondArray.some(number => number % 2 !== 0);
+
+// const anyElementInThirdIsEven = thirdArray.some(number => number % 2 === 0);
+// const anyElementInThirdIsOdd = thirdArray.some(number => number % 2 !== 0);
+
+// 29
+// const isAnyUserActive = users => users.some(user => user.isActive === true);
