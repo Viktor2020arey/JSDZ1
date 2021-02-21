@@ -1416,7 +1416,7 @@
 //     .filter((friends, index, array) => array.indexOf(friends) === index)
 //     .sort((a, b) => a.localeCompare(b));
 
-// 44
+// 44;
 // const getTotalBalanceByGender = (users, gender) =>
 //   [...users]
 //     .filter(user => user.gender === gender)
